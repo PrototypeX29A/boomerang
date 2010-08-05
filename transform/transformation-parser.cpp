@@ -112,6 +112,8 @@ public: \
   #endif
   #include "transformer.h"
   #include "generic.h"
+#include <string.h>
+#include <stdlib.h>
 
   class TransformationScanner;
 

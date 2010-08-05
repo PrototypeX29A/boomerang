@@ -32,7 +32,7 @@ extern "C" {
 #if defined(_MSC_VER) && _MSC_VER >= 1400
 #pragma warning(disable:4996)		// Warnings about e.g. _strdup deprecated in VS 2005
 #endif
-
+#include <string.h>
 
 typedef enum { e_prog, e_procs, e_global, e_cluster, e_libproc, e_userproc, e_local, e_symbol, e_secondexp,
 		   e_proven_true, e_callee, e_caller, e_defines,

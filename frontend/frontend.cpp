@@ -58,6 +58,7 @@
 #include "log.h"
 #include "ansi-c-parser.h"
 #include <stdlib.h>
+#include <string.h>
 
 /*==============================================================================
  * FUNCTION:	  FrontEnd::FrontEnd
@@ -79,8 +80,8 @@ FrontEnd* FrontEnd::instantiate(BinaryFile *pBF, Prog* prog, BinaryFileFactory* 
 			return new SparcFrontEnd(pBF, prog, pbff);
 		case MACHINE_PPC:
 			return new PPCFrontEnd(pBF, prog, pbff);
-		case MACHINE_MIPS:
-			return new MIPSFrontEnd(pBF, prog, pbff);			
+//		case MACHINE_MIPS:
+//			return new MIPSFrontEnd(pBF, prog, pbff);			
 		case MACHINE_ST20:
 			return new ST20FrontEnd(pBF, prog, pbff);
 		default:

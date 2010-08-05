@@ -34,6 +34,7 @@
 #endif
 #endif
 
+#include <string.h>
 #ifdef __cplusplus
 #include <stdlib.h>
 #define YY_USE_CONST
